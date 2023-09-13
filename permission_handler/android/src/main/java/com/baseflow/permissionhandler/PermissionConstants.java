@@ -13,6 +13,7 @@ final class PermissionConstants {
     static final int PERMISSION_CODE_SYSTEM_ALERT_WINDOW = 211;
     static final int PERMISSION_CODE_REQUEST_INSTALL_PACKAGES = 212;
     static final int PERMISSION_CODE_ACCESS_NOTIFICATION_POLICY = 213;
+    static final int PERMISSION_CODE_SCHEDULE_EXACT_ALARM = 214;
 
     //PERMISSION_GROUP
     static final int PERMISSION_GROUP_CALENDAR = 0;
@@ -46,7 +47,11 @@ final class PermissionConstants {
     static final int PERMISSION_GROUP_BLUETOOTH_SCAN = 28;
     static final int PERMISSION_GROUP_BLUETOOTH_ADVERTISE = 29;
     static final int PERMISSION_GROUP_BLUETOOTH_CONNECT = 30;
-
+    static final int PERMISSION_GROUP_NEARBY_WIFI_DEVICES = 31;
+    static final int PERMISSION_GROUP_VIDEOS = 32;
+    static final int PERMISSION_GROUP_AUDIO = 33;
+    static final int PERMISSION_GROUP_SCHEDULE_EXACT_ALARM = 34;
+    static final int PERMISSION_GROUP_SENSORS_ALWAYS = 35;
 
     @Retention(RetentionPolicy.SOURCE)
     @IntDef({
@@ -62,6 +67,7 @@ final class PermissionConstants {
             PERMISSION_GROUP_PHOTOS,
             PERMISSION_GROUP_REMINDERS,
             PERMISSION_GROUP_SENSORS,
+            PERMISSION_GROUP_SENSORS_ALWAYS,
             PERMISSION_GROUP_SMS,
             PERMISSION_GROUP_SPEECH,
             PERMISSION_GROUP_STORAGE,
@@ -77,7 +83,11 @@ final class PermissionConstants {
             PERMISSION_GROUP_ACCESS_NOTIFICATION_POLICY,
             PERMISSION_GROUP_BLUETOOTH_SCAN,
             PERMISSION_GROUP_BLUETOOTH_ADVERTISE,
-            PERMISSION_GROUP_BLUETOOTH_CONNECT
+            PERMISSION_GROUP_BLUETOOTH_CONNECT,
+            PERMISSION_GROUP_NEARBY_WIFI_DEVICES,
+            PERMISSION_GROUP_VIDEOS,
+            PERMISSION_GROUP_AUDIO,
+            PERMISSION_GROUP_SCHEDULE_EXACT_ALARM
     })
     @interface PermissionGroup {
     }
